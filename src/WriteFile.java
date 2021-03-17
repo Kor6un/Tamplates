@@ -8,11 +8,11 @@ public class WriteFile {
         String data = "Hey!";
 
         try {
-            Files.write(Paths.get("output.txt"), data.getBytes());
+            Files.write(Paths.get("src/Resources/output.txt"), data.getBytes());
             System.out.println("File is writing!");
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("File is NOT writing!!!!");
+            System.out.println("File is NOT writing!!!!\n" + e);
         }
     }
 }
